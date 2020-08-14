@@ -1,0 +1,24 @@
+The situation:
+You are a data analyst working for a gaming company. Your boss wants to start a new project for a new video game to release.
+But he doesn’t know what kind of game to make.You might consider, what genre is popular right now, what streamers are playing
+right now, what kind of video games make the most money, etc.
+
+We have gathered 3 different sources of information:
+
+First, gather information from Twitch.tv API to get live data from the top games being player at the moment.
+
+Explaining the files:
+The config.py has user information needed to run the python files.
+The methods.py containes a function to to a get request of the the top 20 games.
+The run.py will output a json response of the top 20 games being played at the time of the function.
+The convert.py to convert the json file into a csv.
+The read_csv.py  will convert the csv and input into a table on postgres SQL.
+
+Steps:
+1. Before doing anything, edit the "config.py" file and add your username and password for postgres SQL.
+2. Run "python run.py"
+3. Run "python convert.py"
+4. Before running the last python file, go into pgAdmin and create a database called "twitch_api"
+4. Run "python read_csv.py"
+5. Done! You will now have data available to view the top 20 games playing on Twitch.tv.
+
