@@ -1,4 +1,4 @@
-#Video Game ETL
+Video Game ETL
 
 Summary:
 Extract, Transform, Load data that can be used to make an analysis on popular video games. Example analyses include determining what genre is popular right now, what popular live streamers are playing right now, what kind of video games make the most money, etc.
